@@ -10,14 +10,6 @@ import lombok.RequiredArgsConstructor;
 public class MessageSender {
     private final MessagePublisher messagePublisher;
 
-    public static void main(String[] args) {
-        MessageSender messageSender = new MessageSender(new MessagePublisher());
-        messageSender.newMessage()
-                .destination("dest")
-                .message("msg")
-                .publish();
-    }   
-
     public MessageBuilder0 newMessage() {
         return new MessageBuilder0();
     }

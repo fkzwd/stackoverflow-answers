@@ -6,7 +6,7 @@ import lombok.*;
  * @author Roman Shageev
  * @since 04.10.2023
  */
-@Builder
+@Builder(setterPrefix = "with")
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
